@@ -1,0 +1,142 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+main {
+    padding: 20px;
+}
+
+.about, .skills {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.profile-image {
+    text-align: center;
+}
+
+.profile-image img {
+    border-radius: 50%; /* Mengubah bentuk gambar menjadi bundar */
+    max-width: 200px;
+    border: 5px solid #333; /* Tambahkan bingkai pada gambar */
+}
+.navbar {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a {
+    font-size: 16px;
+    color: rgb(217, 216, 216);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbar a:hover {
+    background-color: #dddddd;
+    color: rgb(172, 29, 29);
+}
+
+.navbar-text {
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+/* Contact section styles */
+.contact {
+    background-color: #222;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin: 10px 0;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    font-size: 16px;
+}
+
+.form-control-submit-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Location section styles */
+.location {
+    background-color: #787575;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.location i {
+    color: #fff;
+    font-size: 24px;
+}
+
+.location h6 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.location p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
