@@ -68,7 +68,7 @@ p{
 }
 
 .dropdown {
-    /* position: relative; */
+    position: relative;
     display: inline-block;
     padding-left: 3%;
     margin-right: 10px;
@@ -79,7 +79,7 @@ p{
     color: #ffffff;
     border: none;
     cursor: pointer;
-    padding: 10px 15px;
+    padding: 10px 10px;
     justify-content: center;
 }
 
