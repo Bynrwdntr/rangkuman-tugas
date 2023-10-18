@@ -12,6 +12,7 @@ body {
 .navbar {
     background-color: #333;
     display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
 }
 
