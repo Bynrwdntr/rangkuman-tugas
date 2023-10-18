@@ -133,3 +133,24 @@ pre {
   	background-color: black;
 }
 
+/* Tampilan pada layar kecil (misalnya ponsel) */
+@media screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .navbar a {
+        font-size: 14px;
+        padding: 10px;
+    }
+    /* Tambahkan perubahan lain sesuai kebutuhan */
+}
+
+/* Tampilan pada layar sedang (misalnya tablet) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Atur ulang beberapa properti CSS */
+}
+
+/* Tampilan pada layar besar (misalnya desktop) */
+@media screen and (min-width: 1025px) {
+    /* Atur ulang beberapa properti CSS */
+}
