@@ -1,7 +1,7 @@
 body {
     background-image: url("3.jpeg");
     background-size: cover;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-attachment: scroll;
     font-family: Verdana, sans-serif;
     margin: 0;
