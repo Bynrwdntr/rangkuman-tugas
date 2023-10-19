@@ -1,7 +1,7 @@
 body {
     background-image: url("3.jpeg");
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-attachment: scroll;
     font-family: Verdana, sans-serif;
     margin: 0;
@@ -94,7 +94,7 @@ p{
 
 .dropdown-content a {
     color: #333;
-    padding: 12px 16px;
+    padding: 12px 12px;
     text-decoration: none;
     display: block;
 }
