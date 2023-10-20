@@ -1,5 +1,6 @@
+/* Pengaturan latar belakang */
 body {
-    background-image: url("../asets/images/1.jpeg"); /* Adjust the path to the image */
+    background-image: url("../asets/images/1.jpeg"); /* Sesuaikan dengan path ke gambar Anda */
     background-size: cover;
     background-repeat: repeat;
     background-attachment: scroll;
@@ -9,13 +10,14 @@ body {
     color: #333;
 }
 
-
+/* Pengaturan navbar */
 .navbar {
     background-color: #333;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: center;
+    transition: background-color 0.3s; /* Animasi perubahan warna latar belakang */
 }
 
 .navbar a {
@@ -24,19 +26,16 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    border-radius: 30%; /* Set border-radius to 0 for square corners */
+
 }
+
 .navbar a:hover {
     background-color: #dddddd;
     color: rgb(172, 29, 29);
 }
 
-.navbar-text {
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-}
-
+/* Pengaturan h1 */
 h1 {
     font-family: 'Cursive', sans-serif;
     color: #010d15;
@@ -44,10 +43,12 @@ h1 {
     font-style: italic;
 }
 
+/* Pengaturan hr */
 hr {
     border: 2px solid #1b0145;
 }
 
+/* Pengaturan tautan (links) */
 a {
     text-decoration: none;
     color: #af0808;
@@ -56,11 +57,14 @@ a {
 a:hover {
     color: #E74C3C;
 }
-p{
+
+/* Pengaturan elemen p */
+p {
     padding-left: 2rem;
     justify-content: space-between;
-
 }
+
+/* Pengaturan dropdown menu */
 .flex-container {
     display: contents;
     flex-direction: row;
@@ -85,7 +89,6 @@ p{
     border-radius: 10%; /* Set border-radius to 0 for square corners */
 }
 
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -94,7 +97,6 @@ p{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     border-radius: 10%; /* Set border-radius to 0 for square corners */
-
 }
 
 .dropdown-content a {
@@ -112,54 +114,7 @@ p{
     display: block;
 }
 
-pre {
-    margin: 40px;
-}
- 
-
-.contact {
-	height: 110vh;
-	position: relative;
-}
-
-.contact {
-  	background-color: var(--primary);
-}
-
-.about,
-.plans,
-.company,
-.newsletter,
-.location {
-  	background-color: var(--primary-light);
-}
-
-.bottom {
-  	background-color: black;
-}
-
-/* Tampilan pada layar kecil (misalnya ponsel) */
-@media screen and (max-width: 600px) {
-    .navbar {
-        flex-direction: column;
-    }
-    .navbar a {
-        font-size: 14px;
-        padding: 10px;
-    }
-    /* Tambahkan perubahan lain sesuai kebutuhan */
-}
-
-/* Tampilan pada layar sedang (misalnya tablet) */
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-    /* Atur ulang beberapa properti CSS */
-}
-
-/* Tampilan pada layar besar (misalnya desktop) */
-@media screen and (min-width: 1025px) {
-    /* Atur ulang beberapa properti CSS */
-}
-/* CSS */
+/* Animasi elemen */
 .animated-element {
     animation: blink 3s infinite;
 }
@@ -167,4 +122,36 @@ pre {
 @keyframes blink {
     0%, 100% { opacity: 1; }
     50% { opacity: 0; }
+}
+
+/* Animasi navbar saat hover */
+.navbar:hover {
+    background-color: #555;
+}
+.skills li {
+    transition: color 0.5s;
+}
+
+.skills li:hover {
+    color: #72e92d; /* Ganti dengan warna pilihan Anda */
+}
+/* CSS */
+.hover-animation:hover {
+    color: #15eec3; /* Ganti dengan warna pilihan Anda */
+    transition: color 0.5s;
+}
+/* CSS */
+.rotate-animation:hover {
+    transform: rotate(45deg);
+    transition: transform 0.5s;
+}
+/* CSS */
+.scale-animation:hover {
+    transform: scale(1.2); /* Perbesar sebesar 1.2 kali lipat */
+    transition: transform 0.5s;
+}
+/* CSS */
+.background-animation:hover {
+    background-color: #ff6600; /* Ganti dengan warna pilihan Anda */
+    transition: background-color 0.5s;
 }
