@@ -1,81 +1,80 @@
 /* style.css */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #13a5df;
-  }
-  
-  header {
-    text-align: center;
-    background-color: #104f68;
-    padding: 10px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    
-  }
-  
-  h1 {
-    color: white;
-  }
-  
-  form {
-    background-color: #fff;
-    width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  pre {
-    font-weight: bold;
-  }
-  
-  input[type="text"],
-  select {
-    width: 60%;
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
-  /* style.css */
-/* ... CSS lainnya ... */
+  background-image: url("asets/2.jpeg");
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  background-color: #104f68;
+  padding: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+  color: white;
+}
+
+form {
+  background-color: #fff;
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+pre {
+  font-weight: bold;
+}
+
+input[type="text"],
+select {
+  width: 60%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
 
 textarea {
-    width: 60%;
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    text-align: justify; /* Mengatur teks dalam textarea ke tengah */
-    resize: both; /* Memungkinkan pengguna mengubah tinggi textarea */
-  }
-  
-  /* ... CSS lainnya ... */
-  
-  input[type="radio"],
-  input[type="checkbox"] {
-    margin-right: 5px;
-  }
-  
-  label {
-    font-weight: normal;
-  }
-  
-  input[type="button"],
-  input[type="reset"] {
-    background-color: #3498db;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin: 10px 5px;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  input[type="button"]:hover,
-  input[type="reset"]:hover {
-    background-color: #2387c9;
-  }
-  
+  width: 60%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: justify;
+  resize: both;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+label {
+  font-weight: normal;
+}
+
+input[type="button"],
+input[type="reset"] {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="button"]:hover,
+input[type="reset"]:hover {
+  background-color: #2387c9;
+}
