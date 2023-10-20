@@ -27,7 +27,6 @@ body {
     padding: 14px 16px;
     text-decoration: none;
     border-radius: 30%; /* Set border-radius to 0 for square corners */
-
 }
 
 .navbar a:hover {
@@ -128,6 +127,7 @@ p {
 .navbar:hover {
     background-color: #555;
 }
+
 .skills li {
     transition: color 0.5s;
 }
@@ -135,23 +135,51 @@ p {
 .skills li:hover {
     color: #72e92d; /* Ganti dengan warna pilihan Anda */
 }
-/* CSS */
+
+/* CSS untuk animasi hover */
 .hover-animation:hover {
     color: #15eec3; /* Ganti dengan warna pilihan Anda */
     transition: color 0.5s;
 }
-/* CSS */
+
+/* CSS untuk animasi hover */
 .rotate-animation:hover {
     transform: rotate(45deg);
     transition: transform 0.5s;
 }
-/* CSS */
+
+/* CSS untuk animasi hover */
 .scale-animation:hover {
     transform: scale(1.2); /* Perbesar sebesar 1.2 kali lipat */
     transition: transform 0.5s;
 }
-/* CSS */
+
+/* CSS untuk animasi hover */
 .background-animation:hover {
     background-color: #ff6600; /* Ganti dengan warna pilihan Anda */
     transition: background-color 0.5s;
+}
+
+/* CSS untuk tampilan mobile (font awesome hanya pada mobile) */
+@media screen and (max-width: 768px) {
+    /* Menampilkan font awesome pada mobile */
+    .font-awesome-icon {
+        display: flex;
+    }
+
+    /* Mengubah tampilan navbar atau elemen lainnya jika diperlukan */
+    .navbar {
+        background-color: #555; /* Warna latar belakang berbeda untuk mobile */
+        justify-content: space-around; /* Penataan menu mobile */
+    }
+
+    .navbar a {
+        font-size: 14px; /* Ukuran font yang lebih kecil untuk mobile */
+        padding: 10px; /* Ruang antara menu yang lebih kecil untuk mobile */
+        border-radius: 0; /* Tidak ada border-radius untuk tampilan mobile */
+    }
+
+    .navbar a:hover {
+        background-color: #333; /* Warna latar belakang saat hover berbeda untuk mobile */
+    }
 }
