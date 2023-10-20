@@ -21,6 +21,7 @@ h1 {
     font-size: 36px;
 }
 
+
 main {
     padding: 20px;
 }
@@ -144,4 +145,52 @@ footer {
 .location p {
     font-size: 16px;
     margin-bottom: 10px;
+}
+/* CSS */
+header h1 {
+    animation: slide-up 1s ease-out;
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/* CSS */
+.skills li {
+    transition: color 0.5s;
+}
+
+.skills li:hover {
+    color: #72e92d; /* Ganti dengan warna pilihan Anda */
+}
+/* CSS */
+.hover-animation:hover {
+    color: #15eec3; /* Ganti dengan warna pilihan Anda */
+    transition: color 0.5s;
+}
+/* CSS */
+.rotate-animation:hover {
+    transform: rotate(45deg);
+    transition: transform 0.5s;
+}
+/* CSS */
+.scale-animation:hover {
+    transform: scale(1.2); /* Perbesar sebesar 1.2 kali lipat */
+    transition: transform 0.5s;
+}
+/* CSS */
+.background-animation:hover {
+    background-color: #ff6600; /* Ganti dengan warna pilihan Anda */
+    transition: background-color 0.5s;
+}
+/* CSS */
+.position-animation:hover {
+    transform: translateX(20px); /* Geser sejauh 20 piksel ke kanan */
+    transition: transform 0.5s;
 }
