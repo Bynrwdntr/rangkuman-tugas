@@ -1,5 +1,5 @@
 body {
-    background-image: url("asets/images/1.jpeg"); /* Adjust the path to the image */
+    background-image: url("../asets/images/1.jpeg"); /* Adjust the path to the image */
     background-size: cover;
     background-repeat: repeat;
     background-attachment: scroll;
