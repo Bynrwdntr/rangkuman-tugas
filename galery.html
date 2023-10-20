@@ -2,19 +2,65 @@
 <HTML>
 <HEAD>
     <link rel="stylesheet" href="css/style bayu.css">
-<TITLE> Halaman Galery </TITLE></head>
+    <style>
+        body {
+            text-align: center; /* Pusatkan konten dalam halaman */
+        }
+        .navbar {
+            text-align: center; /* Pusatkan navigasi dalam halaman */
+        }
+        .gallery {
+            text-align: center; /* Pusatkan galeri dalam halaman */
+        }
+        .gallery img {
+            padding-top: 4rem;
+            display: inline-block; /* Atur gambar agar muncul dalam satu baris */
+            margin: 0 auto; /* Pusatkan gambar horizontal */
+            max-width: 100%; /* Pastikan gambar tidak melebihi lebar layar */
+            transition: opacity 0.5s; /* Efek transisi opasitas 0.5 detik */
+        }
+    </style>
+    <TITLE> Halaman Galery </TITLE>
+</HEAD>
 <body>
-    <div class="navbar" align="justify-content">
-            
+    <div class="navbar">
         <a href="index.html">Home</a>
         <a href="tentang bayu.html">About Me</a>
         <a href="galery.html">Galery</a>
         <a href="kontak bayu.html">Kontak</a>
     </div>
-<pre>
-<img src="asets/images/warna.jpg" width=600 height=300> <img src="asets/images/th.jpeg" width=600 height=300>
-<img src="asets/images/2.jpeg" width=600 height=300><img src="asets/images/3.jpeg" width=600 height=300> 
-<img src="asets/images/th.jpeg" width=600 height=300><img src="asets/images/home.jpg" width=600 height=300>
-</pre>
-</BODY>
+    <div class="gallery">
+        <img id="slideshow" src="asets/images/warna.jpg" width=800 height=400>
+    </div>
+    <script>
+        // JavaScript Code
+        // Contoh efek: slideshow gambar galeri
+
+        const images = [
+            "asets/images/warna.jpg",
+            "asets/images/th.jpeg",
+            "asets/images/2.jpeg",
+            "asets/images/3.jpeg",
+            "asets/images/th.jpeg",
+            "asets/images/home.jpg"
+        ];
+        let currentImageIndex = 0;
+        const slideshow = document.getElementById('slideshow');
+
+        function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            slideshow.style.opacity = 0; // Mulai dengan opasitas 0
+            setTimeout(() => {
+                slideshow.src = images[currentImageIndex];
+                slideshow.style.opacity = 1; // Selesaikan transisi dengan opasitas 1
+            }, 500); // Setelah 0.5 detik (sesuai dengan transisi CSS)
+        }
+
+        // Tampilkan gambar pertama saat halaman dimuat
+        slideshow.src = images[currentImageIndex];
+
+        // Set interval untuk mengganti gambar setiap beberapa detik
+        setInterval(nextImage, 3000); // Ganti gambar setiap 3 detik
+    </script>
+</body>
 </HTML>
