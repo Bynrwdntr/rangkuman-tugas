@@ -83,8 +83,8 @@ p {
     color: #ffffff;
     border: none;
     cursor: pointer;
-    padding: 10px 10px;
-    justify-content: center;
+    padding: 10px 15px;
+    justify-content: baseline;
     border-radius: 10%; /* Set border-radius to 0 for square corners */
 }
 
