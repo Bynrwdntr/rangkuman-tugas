@@ -76,6 +76,7 @@ p {
     display: inline-block;
     padding-left: 3%;
     margin-right: 10px;
+    margin-top: 1rem;
 }
 
 .dropbtn {
@@ -168,7 +169,7 @@ p {
 
     /* Mengubah tampilan navbar atau elemen lainnya jika diperlukan */
     .navbar {
-        background-color: #555; /* Warna latar belakang berbeda untuk mobile */
+        background-color: #242222; /* Warna latar belakang berbeda untuk mobile */
         justify-content: space-around; /* Penataan menu mobile */
     }
 
@@ -186,7 +187,7 @@ p {
 
     /* CSS untuk dropdown pada tampilan mobile */
     .dropdown {
-        display: block;
+        display: inline-table;
         position: relative;
     }
 
@@ -197,6 +198,8 @@ p {
         min-width: 160px;
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         z-index: 1;
+        opacity: 0;
+        transition: opacity 0.3s ease; /* Efek fadeIn dengan transisi */
     }
 
     .dropdown-content a {
@@ -208,5 +211,6 @@ p {
 
     .dropdown:hover .dropdown-content {
         display: block;
+        opacity: 1;
     }
 }
