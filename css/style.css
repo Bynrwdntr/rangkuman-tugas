@@ -159,7 +159,6 @@ p {
     background-color: #ff6600; /* Ganti dengan warna pilihan Anda */
     transition: background-color 0.5s;
 }
-
 /* CSS untuk tampilan mobile (font awesome hanya pada mobile) */
 @media screen and (max-width: 768px) {
     /* Menampilkan font awesome pada mobile */
@@ -177,9 +176,37 @@ p {
         font-size: 14px; /* Ukuran font yang lebih kecil untuk mobile */
         padding: 10px; /* Ruang antara menu yang lebih kecil untuk mobile */
         border-radius: 0; /* Tidak ada border-radius untuk tampilan mobile */
+        display: block; /* Menjadikan menu sebagai blok pada tampilan mobile */
+        text-align: center; /* Pusatkan teks pada tampilan mobile */
     }
 
     .navbar a:hover {
         background-color: #333; /* Warna latar belakang saat hover berbeda untuk mobile */
+    }
+
+    /* CSS untuk dropdown pada tampilan mobile */
+    .dropdown {
+        display: block;
+        position: relative;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #555;
+        min-width: 160px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
     }
 }
